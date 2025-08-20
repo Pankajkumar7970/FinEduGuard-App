@@ -1,0 +1,10 @@
+<resources>
+  <string name="app_name">FinGuard</string>
+  <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
+  <string name="expo_splash_screen_status_bar_translucent" translatable="false">false</string>
+  <string name="expo_runtime_version">1.0.0</string>
+  <!-- Facebook -->
+  <string name="facebook_app_id">1050911740574489</string>
+  <!-- Optional but recommended (Meta > Settings > Advanced > Client Token) -->
+  <string name="facebook_client_token">969d354736737c07e357e21f8fbe77de</string>
+</resources>

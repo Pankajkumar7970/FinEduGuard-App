@@ -1,0 +1,52 @@
+export const SSL_PINNING_CONFIG = {
+  ENABLED: true,
+
+  CERTIFICATES: {
+    PRIMARY: {
+      domain: "onrender.com",
+      fingerprint:
+        "0B:CD:A7:A3:81:C8:03:9E:3A:E4:D3:64:62:27:BC:DB:90:A1:A8:B9:FE:5C:2D:EC:FF:20:A9:63:D1:A7:F3:39",
+      backup:
+        "91:18:D9:5D:31:D8:27:B0:72:69:89:38:E3:8E:80:29:C1:C0:6F:12:36:C6:FC:DD:77:07:97:DD:A7:50:0E:4E",
+    },
+    API: {
+      domain: "final-app-yzrb.onrender.com",
+      fingerprint:
+        "0B:CD:A7:A3:81:C8:03:9E:3A:E4:D3:64:62:27:BC:DB:90:A1:A8:B9:FE:5C:2D:EC:FF:20:A9:63:D1:A7:F3:39",
+      backup:
+        "91:18:D9:5D:31:D8:27:B0:72:69:89:38:E3:8E:80:29:C1:C0:6F:12:36:C6:FC:DD:77:07:97:DD:A7:50:0E:4E",
+    },
+  },
+
+  VALIDATION: {
+    ALLOW_BACKUP_CERTS: true,
+    MAX_CERT_AGE_DAYS: 90,
+    MAX_RETRIES: 3,
+    TIMEOUT_MS: 10000,
+  },
+
+  DEBUG: {
+    LOG_PINNING_ATTEMPTS: true,
+    LOG_CERTIFICATE_DETAILS: true,
+    LOG_VALIDATION_RESULTS: true,
+    LOG_ERROR_DETAILS: true,
+  },
+};
+
+export enum CertificateValidationResult {
+  VALID = "VALID",
+  INVALID_FINGERPRINT = "INVALID_FINGERPRINT",
+  EXPIRED = "EXPIRED",
+  NOT_YET_VALID = "NOT_YET_VALID",
+  UNTRUSTED_ISSUER = "UNTRUSTED_ISSUER",
+  NETWORK_ERROR = "NETWORK_ERROR",
+  TIMEOUT = "TIMEOUT",
+}
+
+export enum SSLPinningError {
+  CERTIFICATE_MISMATCH = "CERTIFICATE_MISMATCH",
+  NO_VALID_CERTIFICATE = "NO_VALID_CERTIFICATE",
+  NETWORK_ERROR = "NETWORK_ERROR",
+  TIMEOUT = "TIMEOUT",
+  UNKNOWN_ERROR = "UNKNOWN_ERROR",
+}

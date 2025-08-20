@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "391480015245",
+    "project_id": "fineduguard",
+    "storage_bucket": "fineduguard.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:391480015245:android:c954a5eb405bef32d6a5c4",
+        "android_client_info": {
+          "package_name": "com.pankaj465.FinGuard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "391480015245-jo3436i1p3kddefpkkscgmti68pegjqr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pankaj465.FinGuard",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "391480015245-9fj3s3l8hg7vus5ifadhqiff58ka4t5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYxBKJrH3DIrQFKEcY1wzakMIfMMHjhtg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "391480015245-9fj3s3l8hg7vus5ifadhqiff58ka4t5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
